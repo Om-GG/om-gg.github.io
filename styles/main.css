@@ -16,10 +16,12 @@ h1 {
 }
 
 img {
+  float: right;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  height:auto;
   } 
 
 nav {
@@ -36,7 +38,7 @@ nav ul {
 }
 
 article {
-  float: left;
+  float: right;
   padding: 11px;
   width: 75%;
   background-color: rgb(230, 213, 212);
