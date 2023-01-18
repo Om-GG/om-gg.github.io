@@ -16,7 +16,8 @@ h1 {
 }
 
 img {
-  float: top;
+  padding: 20px;
+  float: none;
 } 
 
 nav {
@@ -24,7 +25,7 @@ nav {
   width: 10%;
   background: rgb(172, 120, 116);
   padding: 20px;
-  height: 300px;
+  height: 70%;
 }
 
 nav ul {
@@ -34,16 +35,31 @@ nav ul {
 
 article {
   float: left;
-  padding: 20px;
+  padding-left: 30%;
   width: 90%;
   background-color: rgb(216, 190, 188);
-  height: 300px;
+  height: 70%;
+  text-align: left;
+}
+
+h2 {
+  text-align: center;
+  font-size: 35px;
 }
 
 section::after {
   content: "";
   display: table;
   clear: both;
+}
+
+footer {
+  float: none;
+  padding: 30%;
+  width: 100%;
+  background-color: rgb(216, 190, 188);
+  height: 30%;
+  text-align: center;
 }
 
 @media (max-width: 600px) {
