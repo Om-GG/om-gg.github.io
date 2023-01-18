@@ -24,6 +24,7 @@ nav {
   width: 10%;
   background: rgb(172, 120, 116);
   padding: 20px;
+  height: 300px;
 }
 
 nav ul {
@@ -36,6 +37,7 @@ article {
   padding: 20px;
   width: 90%;
   background-color: rgb(216, 190, 188);
+  height: 300px;
 }
 
 section::after {
