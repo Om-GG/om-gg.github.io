@@ -87,7 +87,7 @@ h2 {
 }
 
 @media (max-width: 600px) {
-  nav, article, img {
+  div, article, img {
     width: 100%;
     height: auto;
   }
