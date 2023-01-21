@@ -62,6 +62,20 @@ img {
   padding-left: 20%;
 }
 
+.blurb-article1 {
+  grid-row-start:3 ;
+  grid-row-end: span 1;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  background-color: rgb(216, 190, 188);
+}
+.blurb-article2 {
+  grid-row-start:3 ;
+  grid-row-end: span 1;
+  grid-column-start: 5;
+  grid-column-end: 7;
+  background-color: rgb(216, 190, 188);
+}
 .article {
   grid-row-start:3 ;
   grid-row-end: span 1;
