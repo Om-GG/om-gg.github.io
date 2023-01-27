@@ -10,7 +10,7 @@ body {
   display: grid;
 
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 50px 1fr 1fr 100px;
+  grid-template-rows: 100px 1fr 1fr 50px;
 
   /*another way --> grid-template: 50px 1fr 1fr 100px/ repeat(6, 1fr); */
  
@@ -23,6 +23,16 @@ body {
 .container div {
   padding: 10px;
   border: 1px solid #000000;
+}
+
+.container header {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  color: rgb(35, 0, 0);
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  background-color: rgb(171, 13, 2);
 }
 
 .header {
@@ -39,20 +49,20 @@ body {
 .banner {
   grid-row-start:2 ;
   grid-row-end: span 1;
-  grid-column-start: 3;
+  grid-column-start: 2;
   grid-column-end: 7;
   }
 
 img {
   max-width: 100%;
-  max-height: 100%1;
+  max-height: 100%;
 }
 
 .blog-left-side-bar {
   grid-row-start:2 ;
   grid-row-end: span 2;
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 2;
   background: rgb(171, 13, 2);
   
 }
@@ -79,7 +89,7 @@ img {
 .article {
   grid-row-start:3 ;
   grid-row-end: span 1;
-  grid-column-start: 3;
+  grid-column-start: 2;
   grid-column-end: 7;
   background-color: rgb(216, 190, 188);
 }
@@ -101,8 +111,9 @@ h2 {
 }
 
 @media (max-width: 600px) {
-  div, article, img {
-    width: 100%;
+  div, header, article, img {
+    width: auto;
     height: auto;
+    font-size: auto;
   }
 }
