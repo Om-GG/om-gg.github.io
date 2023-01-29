@@ -6,16 +6,12 @@ body {
 .container {
   width: 100vw;
   height: 100vh;
-
   display: grid;
-
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 100px 1fr 1fr 50px;
+  grid-template-rows: 100px 1fr 1fr 1fr 1fr 50px;
 
   /*another way --> grid-template: 50px 1fr 1fr 100px/ repeat(6, 1fr); */
- 
   gap: 10px;
-
   padding: 10px;
   box-sizing: border-box;
   }
