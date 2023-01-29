@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <link rel="stylesheet" href="../../styles/main.css" />
+  <title>Poorly-written Lines</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <div class="container">
+    <!-- main header -->
+    <div class="header">Poorly-written Lines</div>
+
+    <!-- image  -->
+    <div class="banner">
+      <img src="../../images/optimized-walk.jpg" alt="Walk into nowhere" />
+    </div>
+    <!-- sidebar  -->
+    <div class="blog-left-side-bar">
+      <h1>Blog</h1>
+      <ul>
+        <li><a href="../tech/index.html">Tech</a></li>
+        <li><a href="index.html">Core</a></li>
+      </ul>
+    </div>
+
+    <!-- welcome blurb -->
+    <div class="article">
+      <h1><strong>JavaScript and the DOM </strong></h1>
+      <br />
+      <p>
+        Kia ora and welcome to this new technical blog post! On this
+        occasion<br />
+
+        we will be discussing some of the tools we have been learning and
+        actively using in our journey to becoming Full Stack Web Developers.
+        Make sure you bring a fan to help you cool you down as we manage our
+        excitement through this quick recap of all we are learning!
+      </p>
+      <br />
+      <h2>HTML, CSS and JavaScript</h2>
+      <p>
+        First things first, let us talk about the three main characters of our
+        story this week, you know their names! It’s HTML (Hypertext Markup
+        Language), CSS (Cascading Style Sheets, and JavaScript! The three
+        ingredients for a delicious looking (and working) website. Delicious?
+        Yes, DELICIOUS! And I’ll show you why with a simple example.<br /><br />
+
+        I find Burgers to be the perfect food sent by the Gods to guide
+        humanity towards a perfectly balanced and wholesome way of life, but
+        apart from that, they are the best analogy to discuss the relationship
+        between our languages in question. Ready?<br /><br />
+
+        The main and most important element that we need in order to make a
+        burger is, of course, the patty. It can be any type of meat, or blend
+        of grains if you prefer, but every hamburger needs a juicy piece of
+        something yum to earn its name. In our case, HTML provides all the
+        basic elements a web page needs to exist; it gives the page its
+        headers, titles, subheaders, paragraphs, images, links and anything
+        else that actually makes up the page and its structure. When you know
+        what type of page you are building, you know what you want your patty
+        to be and you have arguably made the most important set of
+        decisions.<br /><br />
+
+        Once we have our preferences clear on our HTML patty we have to
+        decide: what kind of presentation do I want it in? We are ready to
+        choose our bun! Is it toasted, brioche, plain white bread or a piece
+        of lettuce wrapped around the patty? CSS is the language that allows
+        us to give our web-burger the look we want and configures it to give
+        that look and feel that we are craving. CSS allows us to find the
+        elements in our HTML document and say: you are going to look like
+        this, with this and that colour, arranged this way in regards to size;
+        it can even make our elements change depending on how we interact with
+        them! So, much like a burger bun, it determines the way we perceive
+        and handle our delicious website.<br /><br />
+
+        Now, there are some things missing from our foodie image of
+        perfection. Are we adding cheese, sriracha sauce, mustard? How will
+        our taste buds interact with our personalised culinary web confection?
+        JavaScript brings in all the variety we need to make our site have all
+        the functions a modern-day portal needs. Do we need animations,
+        cascading menus? Does our page transform as the user scrolls down,
+        does it change colours? Do the buttons move around, jump or stand
+        still? Is there a shopping cart or counter? If we think of our salad,
+        toppings and sauces as ways of bringing out flavours or complimenting
+        them to create a better, mouthwatering user experience, we can
+        understand how JavaScript increases the enjoyability and fluidity of
+        the user experience in our page. It can also work against our intended
+        purpose for our portal, as we have all seen a friend just bathe their
+        burger in one sauce or another (or worse, add pineapple to it!),
+        making the whole thing taste like nothing but sauce. We can also
+        sometimes be getting in our own way by adding functionalities that
+        distract the user from being able to get what they want.<br /><br />
+
+        Having used this scrumptious analogy to cement our understanding of
+        our three languages, let us explore some elements within these
+        languages that have been really useful to us in our work so far. What
+        we will discuss from this point forward is mostly related to
+        JavaScript and how we use its functionality as a language to achieve
+        things we want on our page by using it to interact with our HTML and
+        CSS components.<br /><br />
+      </p>
+      
+      <h2>Flow Control and Loops</h2>
+      <p>
+        To get started, there are two very interesting and important
+        components of JavaScript in its functioning as a programming language,
+        these elements are present in other languages as well, and we will see
+        why. We are talking about Control Flow and Loops.<br /><br />
+
+        Regarding Control Flow, simply put, it is the way we can determine the
+        order and whether or not something is executed in our code. It is
+        mainly controlled by “if”, “else”, “switch”, “case” and “break”
+        statements. This may seem a bit too abstract, so we can explore it by
+        comparing it to an everyday experience. Say someone we love asks us to
+        do something for them, in a very specific way to get a very specific
+        result. I have a friend who bakes, and has told me how important it is
+        in baking to mix the ingredients in the right order. So, let’s say she
+        asked me to make a banana bread; I would have to:<br /><br />
+      <ol>
+        <li>Preheat the oven to the desired temperature.</li>
+        <li>Measure the flour, baking soda and salt I need and put it in a bowl.</li>
+        <li>Measure my butter and sugar and put them in a different bowl.</li>
+        <li>Mix 2 eggs well and add them to my second bowl.</li>
+        <li>Mash enough bananas to make my heart sing.</li>
+        <li>Mix my bananas with my butter, eggs and sugar.</li>
+        <li>Add the wet mix to the first bowl with all my dry ingredients.</li>
+        <li>Mix well with a spatula or my hands.</li>
+        <li>Butter the baking tray.</li>
+        <li>Pour the mix in the tray.</li>
+        <li>Chuck that beast in the oven.</li>
+        <li>Bake until ready.</li>
+      </ol><br /><br />
+
+      Doing all these things in the right order guarantees a delicious cake waiting for us at the end of the road. But
+      what if I was cheating, and had a ready-made mix to just chuck in the tray and put straight in the oven? I would
+      be skipping steps 2 to 8 and going straight from 1 to 9. And just like that, control flow allows for the processes
+      we are programming in our code to go just as we want them to, allowing for exceptions and alternate rules to make
+      sure it works in a variety of scenarios, and runs smoothly without any accidents. <br /><br />
+
+      In the case of loops, we can imagine us now running a bakery, after finding that our true passion is delighting
+      ourselves and others with sweet-smelling, tongue-melting, mind-shattering bites of flavour. Then, of course we
+      would have to be repeating processes, like the ones described above, once and again to meet our customers'
+      insatiable appetite for our confections. Which of our desserts and baked goods will we be making? How many of them
+      and which days of the week? Will we restock everything every day or focus on the most popular items in our menu?
+      Our loops are where we define how we navigate these processes and what are our responses to all these different
+      cases.<br /><br />
+
+      So let’s say we were in the kitchen, baking every morning from 5 am. We would have to:<br /><br />
+      <ol>
+        <li>Look at our current stock for each of the items in our menu.</li>
+        <li>Compare stock numbers to our perceived demand for each of the items.</li>
+        <li>Decide which items need to be restocked.</li>
+        <li>Make sure we have all the ingredients to make them.</li>
+        <li>Start production for each of the items.</li>
+        <li>Put them out in our storefront for our guests to enjoy.</li>
+        <li>Look again at our stock for each of the items in our menu.</li>
+        <li>If the stock is running low on any item we go back to step 3 and repeat our process.</li>
+        <li>If the stock is within our desired limits, the loop ends until the end of the day,<br /> when we take note
+          of the
+          stock to start over the next morning.</li>
+      </ol><br /><br />
+
+      Such, then, is the importance of having clear and working control flow and knowing how to properly use loops.<br />
+      </p>
+      <br />
+      <h2>The DOM</h2>
+      <p>Now we have reached a very interesting, and sometimes confusing, bend in our road. The Document Object Model
+        (DOM), with its imposing and serious name, is a programming interface that allows a user like ourselves to
+        interact with the elements of an HTML or XML document. It represents the document in question, and its
+        components in a format that looks like a hierarchy tree, transforming every element (a heading, a paragraph or a
+        button) into a node in the tree. We can use this way of organising the elements in our document to interact with
+        them and make changes to their styles, content or behaviour in response to user actions. And how do we achieve
+        this? By using JavaScript, in our case, or other programming languages to dictate exactly how we want everything
+        to behave.<br /><br />
+
+        Say we want to have a collapsing menu that appears when we hover over it and its elements, but disappears once
+        we move remove the mouse cursor from on top of it. We can use our visual coding interface (like VS Code) or even
+        the browsers DevTools to script the behaviour we want, exactly like we want it. We can accomplish this by
+        creating variables that represent our menu and its items, and the program these variables within a function to
+        appear or disappear depending on an event (an user action) like ‘click’ or ‘hover’. We would write this code,
+        link it to our .css and .html files, and so, have our dropdown menu work as desired.<br />
+      </p>
+      <br />
+      <h2>Arrays and Objects</h2>
+      <p>Moving on to another very important pair, arrays and objects are variables within JavaScript that allow us to
+        store, organise and access data in different ways. To start us off, arrays are collections of values organised
+        in linear order, the order is registered in the array’s index and holds the information of which item goes in
+        which position. When we want to access an item in an array, we use its position in the index to call upon it. So
+        if I had [‘pear’, ‘tango’, 4665, True, ‘fandango’] as an array called “plumbus”, I could access ‘tango’ by
+        stating, let’s say: “console.log(plumbus[1])”, remembering that we start counting the items in our arrays from 0
+        and not from 1.<br /><br />
+
+        Now, objects have a different way of storing information. Instead of using the number of an item’s position,
+        keys (words or symbols selected by the programmer to hold a value) are paired with a value (numbers, strings of
+        text or booleans) to store the information. So, in a case like storing user information, we would have an object
+        called “userInfo” and it would hold keys like “age: 25, student: true, married: false, name: Jahhoondadongo”,
+        and we would access the information held in the object by saying, for example :
+        “console.log(userInfo.name)”.<br /><br />
+
+        All in all, the main difference between the way we access the data in arrays and objects is that we use
+        numerical index values for the first, and keys in the case of the second. Arrays are, then, best used to access
+        data in a specific order, and objects are better for data that we access by calling a specific key or
+        property.<br /><br /></p>
+      <br />
+      <h2>Functions</h2>
+      <p>And finally, our functions, the bread and butter of programming in JavaScript (and many other languages), are a
+        piece of code that fulfils a purpose and can be used multiple times. They allow us to structure our code into
+        contained and manageable chunks, so we can better write, read, organise and maintain it. We can say they help us
+        reuse our code over and over, saving time and energy by building upon our previous work. They also isolate
+        specific tasks, which we can test and debug individually making our jobs easier. Another way they help us is by
+        avoiding code repetition, making our job more efficient and reducing the risk of creating bugs.<br /><br />
+
+        I hope you kept your fan close by as we have taken this quick stroll around our coding tools and elements, if
+        you enjoyed as much as I did, you sure would have been taking a couple of breaks to cool off and catch your
+        breath.<br /><br />
+
+        Read you again soon, don’t forget to hold on to that fan and keep it cool as we go.
+      </p>
+      <br />
+
+      <br />
+    </div>
+
+    <!-- footer with links/map site -->
+    <div class="footer">
+      <p>
+        <a href="../tech/index.html">Tech</a>
+        <a href="index.html">Core</a>
+        <a href="../../index.html">Home</a>
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>
