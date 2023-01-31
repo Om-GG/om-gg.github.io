@@ -91,12 +91,32 @@ img {
   background-color: rgb(216, 190, 188);
 }
 
+a:link {
+  color: rgb(34, 0, 0);
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: rgb(94, 24, 81);
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(251, 192, 222);
+  text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+  color: rgb(185, 185, 244);
+  text-decoration: underline;
+}
 h2 {
   text-align: center;
   font-size: 35px;
 }
-
-
 
 .footer {
   grid-row-start: 4;
