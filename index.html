@@ -11,45 +11,96 @@
    </head>
 
 <body>
-<div class="container">
+
  <!-- main header -->
- <header>Poorly-written Lines</header>
+  <nav class="navbar is-black" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">  
+      <a class="navbar-item" href="index.html">
+        <img src="images/d.png" width="28" height="28">
+      </a>
 
-  <!-- image  -->
-  <div class="banner"><img src="images/optimized-walk.jpg" alt="Close up of person's shoes walking away from camera into a desert" ></div>
-  <!-- sidebar  -->
-  <div class="blog-left-side-bar">
-    <h1>Blog</h1>
-    <ul>
-      <li><a href="blog/tech/index.html">Tech</a></li><ul>
-        <li><a href="blog/tech/html-css.html">display: inline vs display: inline-block</a></li>
-        <li><a href="blog/tech/javascript-dom.html">JavaScript and the DOM</a></li>
-        <li><a href="blog/tech/problem-solving.html">Problem Solving</a></li>
-      </ul>
-      <li><a href="blog/core/index.html">Core</a></li>
-      <ul>
-        <li><a href="blog/core/identity-values.html">Simply put</a></li>
-        <li><a href="blog/core/learning-plan.html">Learning plan</a></li>
-        <li><a href="blog/core/emotional-intelligence.html">Emotional Intelligence</a></li>
-        <li><a href="blog/core/neuroplasticity.html">Neuroplasticity</a></li>
-      </ul>
-    </ul>
-  </div>
-
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item">
+          Poorly-written Lines
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Tech
+          </a>
+  
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="blog/tech/html-css.html">
+              display: inline vs display: inline-block
+            </a>
+            <a class="navbar-item" href="blog/tech/javascript-dom.html">
+              JavaScript and the DOM
+            </a>
+            <a class="navbar-item" href="blog/tech/problem-solving.html">
+              Problem Solving
+            </a>
+          </div>
+        </div>
+  
+        
+  
+        
+      </div>
+  
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Core
+          </a>
+  
+          <div class="navbar-dropdown is-right">
+            <a class="navbar-item" href="blog/core/identity-values.html">
+              Simply Put
+            </a>
+            <a class="navbar-item" href="blog/core/learning-plan.html">
+              Learning Plan
+            </a>
+            <a class="navbar-item" href="blog/core/emotional-intelligence.html">
+              Emotional Intelligence
+            </a>
+            <a class="navbar-item" href="blog/core/neuroplasticity.html">
+              Neuroplasticity
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+ <!-- image  -->
+ <figure class="image is-3by1"><img src="images/optimized-walk.jpg" alt="Close up of person's shoes walking away from camera into a desert" ></figure>
 <!-- welcome blurb -->
-    <div class="article">
-      <h1> Poorly-written Lines</h1>
-      <p> The lines in here contained lead nowhere, read along if that is your destination.</p>
-      <p> Nowhere is full of everything we crave for, nobody waits for us there. </p>
+    <div class="box">
+      
+      <div class="content">
+        <div class="block"><h1> Poorly-written Lines</h1></div>
+        <div class="block"><p> The lines in here contained lead nowhere, read along if that is your destination.</p></div>
+        <div class="block"><p> Nowhere is full of everything we crave for, nobody waits for us there. </p></div>
+      </div>
     </div>
 
 <!-- footer with links/map site -->
-  <div class="footer">
-    <p><a href="blog/tech/index.html">Tech</a>
-    <a href="blog/core/index.html">Core</a>
-    <a href="index.html">Home</a></p>
-  </div>
-</div>
+  <footer class="footer">
+   <div class="content has-text-centered">
+    <p>
+      <!-- <a href="blog/tech/index.html">Tech</a> -->
+      <a href="index.html">Home</a>
+      <!-- <a href="blog/core/index.html">Core</a> -->
+    </p>
+   </div>
+  </footer>
+
   </body>
 
 </html>
